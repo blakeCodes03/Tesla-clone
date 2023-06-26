@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: gotham book;
+  src: url(../src/assets/GothamSSm-Book_Web.woff2);
+}
+* {
+  font-family: "Gotham Book", sans-serif; 
+}
+.scroll-container{
+  height:100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  
+}
+.models{
+  height:100vh;
+  scroll-snap-align:start;
+  scroll-snap-stop:always;
+}
+.menu-div{
+  height:99.99vh;  
+}
+/* Apply styles to elements with the "blur" class */
+.blur>* {
+  filter: blur(5px);
+  color:blue;
+}
+
